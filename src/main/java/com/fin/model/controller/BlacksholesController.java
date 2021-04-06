@@ -24,14 +24,19 @@ public class BlacksholesController {
     @ResponseBody
     private Map<String, Object> blacksholes(@RequestBody BlacksholesBo blacksholesBo) {
         Map<String, Object> modelMap = new HashMap<>();
-        double s = blacksholesBo.getS();
-        double r = blacksholesBo.getR();
-        double x = blacksholesBo.getX();
-        double sigma = blacksholesBo.getSigma();
-        double t = blacksholesBo.getT();
-        double res = blacksholes.call(s, x, r, sigma, t);
-        modelMap.put("success", true);
-        modelMap.put("p", res);
+        try {
+            double s = blacksholesBo.getS();
+            double r = blacksholesBo.getR();
+            double x = blacksholesBo.getX();
+            double sigma = blacksholesBo.getSigma();
+            double t = blacksholesBo.getT();
+            double res = blacksholes.callPrice(s, x, r, sigma, t);
+            modelMap.put("success", true);
+            modelMap.put("p", res);
+        } catch (Exception e) {
+            modelMap.put("success", false);
+            modelMap.put("errMsg", e.getMessage());
+        }
         return modelMap;
     }
 }
