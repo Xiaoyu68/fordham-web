@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Main-Class: com.fin.model.ModelApplication
+Class-Path: jackson-core-2.11.4.jar log4j-api-2.13.3.jar jackson-datatyp
+ e-jdk8-2.11.4.jar lombok-1.18.18.jar jackson-datatype-jsr310-2.11.4.jar
+  spring-aop-5.3.4.jar spring-webmvc-5.3.4.jar spring-core-5.3.4.jar jac
+ kson-databind-2.11.4.jar spring-boot-autoconfigure-2.4.3.jar snakeyaml-
+ 1.27.jar spring-boot-starter-tomcat-2.4.3.jar spring-context-5.3.4.jar 
+ spring-boot-2.4.3.jar spring-boot-starter-json-2.4.3.jar spring-boot-st
+ arter-web-2.4.3.jar spring-boot-starter-logging-2.4.3.jar jul-to-slf4j-
+ 1.7.30.jar slf4j-api-1.7.30.jar jackson-annotations-2.11.4.jar spring-b
+ eans-5.3.4.jar jackson-module-parameter-names-2.11.4.jar spring-web-5.3
+ .4.jar spring-boot-starter-2.4.3.jar spring-jcl-5.3.4.jar jakarta.annot
+ ation-api-1.3.5.jar jakarta.el-3.0.3.jar logback-classic-1.2.3.jar tomc
+ at-embed-websocket-9.0.43.jar spring-expression-5.3.4.jar log4j-to-slf4
+ j-2.13.3.jar logback-core-1.2.3.jar tomcat-embed-core-9.0.43.jar
+

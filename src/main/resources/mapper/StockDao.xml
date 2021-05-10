@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fin.model.dao.StockDao">
+    <select id="queryStockByTime" parameterType="Date" resultType="com.fin.model.entity.Stock">
+    SELECT
+        price_id,
+        price,
+        create_time
+    FROM
+        tb_data
+    WHERE
+        create_time BETWEEN #{startTime} AND #{endTime}
+    </select>
+
+    <insert id="insertStock" parameterType="com.fin.model.entity.Stock"
+            useGeneratedKeys="true" keyProperty="priceId" keyColumn="price_id">
+        INSERT
+        INTO
+            tb_data(price_id, price, create_time)
+        VALUES
+        (#{price_id},#{price},#{create_time})
+    </insert>
+</mapper>
