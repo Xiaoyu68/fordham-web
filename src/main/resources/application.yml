@@ -26,8 +26,8 @@ spring:
     password: 11111111
   servlet:
     multipart:
-      max-file-size: 512000
-      max-request-size: 51200
+      max-file-size: -1
+      max-request-size: -1
 
 
 mybatis:

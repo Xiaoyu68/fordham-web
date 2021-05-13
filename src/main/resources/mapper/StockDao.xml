@@ -20,6 +20,6 @@
         INTO
             tb_data(price_id, price, create_time)
         VALUES
-        (#{price_id},#{price},#{create_time})
+        (#{priceId},#{price},#{createTime})
     </insert>
 </mapper>

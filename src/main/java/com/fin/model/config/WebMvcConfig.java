@@ -33,8 +33,8 @@ public class WebMvcConfig implements WebMvcConfigurer, ApplicationContextAware {
     public CommonsMultipartResolver createMultipartResolver() {
         CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
         multipartResolver.setDefaultEncoding("utf-8");
-        multipartResolver.setMaxUploadSize(20971520);
-        multipartResolver.setMaxInMemorySize(20971520);
+        multipartResolver.setMaxUploadSize(82075915);
+        multipartResolver.setMaxInMemorySize(82075915);
         return multipartResolver;
     }
 
