@@ -48,7 +48,7 @@ public class StockController {
         Map<String, Object> modelMap = new HashMap<>();
         MultipartFile file = request.getFile("excel");
         CsvReader csvReader = new CsvReader();
-        File file1 = new File("/Users/dengxiaoyu/Desktop/data.csv");
+        File file1 = new File("/Users/dengxiaoyu/Desktop/silver_data/deag.csv");
         CsvContainer csv = csvReader.read(file1, StandardCharsets.UTF_8);
         for (CsvRow row : csv.getRows()) {
             System.out.println("Read line: " + row);
